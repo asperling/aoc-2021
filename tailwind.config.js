@@ -22,7 +22,7 @@ module.exports = {
         '3xl': '1640px',
       },
       spacing: {
-        'xl': '1240px',
+        xl: '1240px',
         '2xl': '1400px',
         '3xl': '1600px',
       },
