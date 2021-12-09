@@ -39,9 +39,9 @@ export default function Button({
         'transition-colors duration-75',
         [
           variant === 'primary' && [
-            'bg-primary-400 text-white',
-            'border border-primary-500',
-            'hover:bg-primary-500 hover:text-white',
+            'bg-primary-800 text-white',
+            'border border-primary-700',
+            'hover:bg-primary-700 hover:text-white',
             'active:bg-primary-600',
             'disabled:bg-primary-600 disabled:hover:bg-primary-600',
           ],
