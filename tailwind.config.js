@@ -17,6 +17,15 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      screens: {
+        '2xl': '1440px',
+        '3xl': '1640px',
+      },
+      spacing: {
+        'xl': '1240px',
+        '2xl': '1400px',
+        '3xl': '1600px',
+      },
       fontFamily: {
         primary: ['Inter', ...fontFamily.sans],
       },
