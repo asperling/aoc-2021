@@ -4,8 +4,6 @@
 
 :root {
   /* #region  /**=========== Primary Color =========== */
-  /* !STARTERCONF Customize these variable, copy and paste from /styles/colors.css for list of colors */
-  --tw-clr-primary-50: 240, 249, 255;
   --tw-clr-primary-100: 224, 242, 254;
   --tw-clr-primary-200: 186, 230, 253;
   --tw-clr-primary-300: 125, 211, 252;
