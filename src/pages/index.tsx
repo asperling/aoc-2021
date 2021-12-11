@@ -11,7 +11,7 @@ export default function HomePage() {
         <section className='bg-white'>
           <div className='layout flex flex-col justify-center items-center min-h-screen text-center'>
             <h1>Advent Of Code</h1>
-            {[1, 2, 3, 4, 5, 6, 7].map((day) => (
+            {[1, 2, 3, 4, 5, 6, 7, 8].map((day) => (
               <CustomLink key={day} href={'/day/' + day}>
                 Day {day}
               </CustomLink>
