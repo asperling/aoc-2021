@@ -1,6 +1,7 @@
 import {
   findLowPointsAndBasins,
   mapInput2Points,
+  productOfLargestBasins,
   riskLevelSumOfLowPoints,
 } from '../day9';
 
@@ -42,5 +43,9 @@ describe('Day 9', () => {
     expect(lowPoints[1].basinSize).toBe(9);
     expect(lowPoints[2].basinSize).toBe(14);
     expect(lowPoints[3].basinSize).toBe(9);
+  });
+
+  test('The product of the 3 biggest basins should be calculated correctly', () => {
+    expect(productOfLargestBasins(lowPoints)).toBe(1134);
   });
 });

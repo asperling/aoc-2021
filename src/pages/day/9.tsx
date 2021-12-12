@@ -2,6 +2,7 @@ import {
   findLowPointsAndBasins,
   LowPoint,
   mapInput2Points,
+  productOfLargestBasins,
   riskLevelSumOfLowPoints,
 } from '@/lib/day9';
 
@@ -25,7 +26,8 @@ function Day9({ lowPoints }: { lowPoints: Array<LowPoint> }) {
               <strong>{riskLevelSumOfLowPoints(lowPoints)}</strong>.
             </Solution>
             <Solution part={2}>
-              The sum of all decoded signals is <strong>{1}</strong>.
+              The product of the three largest basins is{' '}
+              <strong>{productOfLargestBasins(lowPoints)}</strong>.
             </Solution>
           </div>
           <pre>{input}</pre>

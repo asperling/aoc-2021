@@ -84,3 +84,13 @@ export function riskLevelSumOfLowPoints(lowPoints: Array<LowPoint>): number {
     ? lowPoints.map(({ point }) => point + 1).reduce((p, c) => p + c)
     : 0;
 }
+
+export function productOfLargestBasins(lowPoints: Array<LowPoint>): number {
+  return lowPoints?.length
+    ? lowPoints
+        .sort((a, b) => b.basinSize - a.basinSize)
+        .slice(0, 3)
+        .map((e) => e.basinSize)
+        .reduce((a, b) => a * b)
+    : 0;
+}
