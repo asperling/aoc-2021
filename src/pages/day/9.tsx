@@ -1,5 +1,6 @@
 import {
   findLowPointsAndBasins,
+  LowPoint,
   mapInput2Points,
   riskLevelSumOfLowPoints,
 } from '@/lib/day9';
@@ -11,10 +12,7 @@ import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 import Solution from '@/components/Solution';
 
-const mapped = mapInput2Points(input);
-const lowPoints = findLowPointsAndBasins(mapped);
-
-export default function Day9() {
+function Day9({ lowPoints }: { lowPoints: Array<LowPoint> }) {
   return (
     <Layout>
       <Seo />
@@ -36,3 +34,9 @@ export default function Day9() {
     </Layout>
   );
 }
+
+Day9.getInitialProps = () => {
+  return { lowPoints: findLowPointsAndBasins(mapInput2Points(input)) };
+};
+
+export default Day9;
