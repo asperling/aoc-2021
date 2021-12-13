@@ -73,7 +73,7 @@ const testPathsInvalidPart2 = [
 const testPathsNotFinal = ['start', 'end', 'end,start'];
 
 describe('Day 12', () => {
-  xtest('String 2 paths', () => {
+  test('String 2 paths', () => {
     expect(string2PathSegments(exampleInput)).toEqual({
       A: ['start', 'c', 'b', 'end'],
       b: ['start', 'A', 'd', 'end'],
@@ -85,59 +85,59 @@ describe('Day 12', () => {
   });
 
   testPathsValidPart1.forEach((path) => {
-    xtest(path + ' should be a valid path for part 1', () => {
+    test(path + ' should be a valid path for part 1', () => {
       expect(isPathValidPart1(path.split(','))).toBe(true);
     });
   });
 
   testPathsValidPart2.forEach((path) => {
-    xtest(path + ' should be a valid path for part 2', () => {
+    test(path + ' should be a valid path for part 2', () => {
       expect(isPathValidPart2(path.split(','))).toBe(true);
     });
   });
 
   testPathsValidPart1.forEach((path) => {
-    xtest(path + ' should be a final path', () => {
+    test(path + ' should be a final path', () => {
       expect(isPathFinal(path.split(','))).toBe(true);
     });
   });
 
   testPathsInvalidPart1.forEach((path) => {
-    xtest(path + ' should be an invalid path for part 1', () => {
+    test(path + ' should be an invalid path for part 1', () => {
       expect(isPathValidPart1(path.split(','))).toBe(false);
     });
   });
 
   testPathsInvalidPart2.forEach((path) => {
-    xtest(path + ' should be an invalid path for part 2', () => {
+    test(path + ' should be an invalid path for part 2', () => {
       expect(isPathValidPart1(path.split(','))).toBe(false);
     });
   });
 
   [...testPathsInvalidPart1, ...testPathsNotFinal].forEach((path) => {
-    xtest(path + ' should not be final path', () => {
+    test(path + ' should not be final path', () => {
       expect(isPathFinal(path.split(','))).toBe(false);
     });
   });
 
-  xtest('Small example data should result in 10 valid and final paths for part 1', () => {
+  test('Small example data should result in 10 valid and final paths for part 1', () => {
     expect(getNumberOfPaths(string2PathSegments(exampleInput))).toBe(10);
   });
 
-  xtest('Small example data should result in 36 valid and final paths for part 2', () => {
+  test('Small example data should result in 36 valid and final paths for part 2', () => {
     expect(
       getNumberOfPaths(string2PathSegments(exampleInput), isPathValidPart2)
     ).toBe(36);
   });
 
-  xtest('Larger example data should result in 226 paths for part 1', () => {
+  test('Larger example data should result in 226 paths for part 1', () => {
     const largerExampleInput = string2PathSegments(
       'fs-end\nhe-DX\nfs-he\nstart-DX\npj-DX\nend-zg\nzg-sl\nzg-pj\npj-he\nRW-he\nfs-DX\npj-RW\nzg-RW\nstart-pj\nhe-WI\nzg-he\npj-fs\nstart-RW'
     );
     expect(getNumberOfPaths(largerExampleInput)).toBe(226);
   });
 
-  xtest('Larger example data should result in 3509 paths for part 2', () => {
+  test('Larger example data should result in 3509 paths for part 2', () => {
     const largerExampleInput = string2PathSegments(
       'fs-end\nhe-DX\nfs-he\nstart-DX\npj-DX\nend-zg\nzg-sl\nzg-pj\npj-he\nRW-he\nfs-DX\npj-RW\nzg-RW\nstart-pj\nhe-WI\nzg-he\npj-fs\nstart-RW'
     );
