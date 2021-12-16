@@ -6590,6 +6590,11 @@
   "resolved" "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz"
   "version" "0.0.6"
 
+"typedpriorityqueue@^1.0.1":
+  "integrity" "sha512-MqdV4jA0tVOj2PL/vS2wXqELNF00zbQg+YFHqcmiSg/AhYWh0Nlv2WQvFLn2KM7Wp+IlqTB2CqbMmuuuaeZ9og=="
+  "resolved" "https://registry.npmjs.org/typedpriorityqueue/-/typedpriorityqueue-1.0.1.tgz"
+  "version" "1.0.1"
+
 "typescript@^4.4.3", "typescript@^4.5.2", "typescript@>=2.7", "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta", "typescript@>=3.3.1":
   "integrity" "sha512-5BlMof9H1yGt0P8/WF+wPNw6GfctgGjXp5hkblpyT+8rkASSmkUKMXrxR0Xg8ThVCi/JnHQiKXeBaEwCeQwMFw=="
   "resolved" "https://registry.npmjs.org/typescript/-/typescript-4.5.2.tgz"
